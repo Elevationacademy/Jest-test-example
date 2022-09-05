@@ -1,0 +1,70 @@
+Learning Objectives:
+---------------------
+The student will:
+* unerstand why developers write and run unit/integration tests
+* unerstand what is jest and what we use it for
+* understand what are edge cases, and what are test cases.
+* unerstand how to write a basic test
+
+
+Main Points:
+------------
+what is testing?
+
+why testing:
+    - code Validation
+    - avoid bugs
+    - allow refactor
+    - fast developing, agile
+    - documentation
+
+Test types: unit vs integration (e2e)
+
+
+
+
+ Test cases:
+    - Positive
+    - Negative
+    - Edge cases
+
+example to think about test cases:
+Vowel Couter
+
+    Typical cases
+        1 vowel
+            should return 1 in a 1 vowel string (e)
+            should return 1 in a string that begins with a vowel (egg)
+            should return 1 in a string that ends with a vowel (pre)
+       
+        should return 0 in a 1 non-vowel string (r)
+        should return 2 in a duplicated vowel string (cheek)
+
+        should count all the vowels (aeiou)
+
+    Regular cases
+        should return vowel count in a mixed string (apple)
+
+    Edge cases
+        should return 0 for the empty string ("")
+        should return 0 for a string with no vowels (rrtgykm mmmm llkk)
+
+
+Jest - testing framework
+
+Testing code
+ - simple test
+    - name of the file needs to end with test.js
+    - to run 1 file: $ npm test <file name> 
+ - failed test: change the method so that the test will fail
+ - run all tests: $ npm test
+ 
+ More options: calc.test.js
+ - matchers: toBeFalsy
+ - testing an object
+ - test structure: setup, execution, expect 
+
+Advanced
+
+Explain how to mock a callback - simple-mock.test.js
+another example - mock-cats.js
